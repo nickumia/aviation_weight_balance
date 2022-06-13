@@ -11,4 +11,15 @@
     <string name="menu_aircrafts">Aircrafts</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="test">test</string>
+    <string name="new_aircraft_specification">New Aircraft Specification</string>
+    <string name="name">Name</string>
+    <string name="test_airplane_1">Test Airplane 1</string>
+    <string name="_79_in_inches">79 (in inches)</string>
+    <string name="pilot_arm">Pilot Arm</string>
+    <string name="first_row_arm">First Row Arm</string>
+    <string name="fuel_arm">Fuel Arm</string>
+    <string name="baggage_arm">Baggage Arm</string>
+    <string name="save">Save</string>
+    <string name="empty_weight">Empty Weight</string>
+    <string name="weight_balance"><![CDATA[Weight & Balance]]></string>
 </resources>

@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.ekpro.weightbalance.ui.gallery.GalleryFragment"
+        android:name="com.ekpro.weightbalance.ui.aircraft.AircraftFragment"
         android:label="@string/menu_aircrafts"
         tools:layout="@layout/fragment_aircrafts" />
 
