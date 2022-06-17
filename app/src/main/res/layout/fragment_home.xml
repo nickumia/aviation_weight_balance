@@ -10,13 +10,11 @@
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="w empty"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
@@ -24,11 +22,12 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="a empty"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimal" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal3"
@@ -39,8 +38,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal4"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal4"
-        app:layout_constraintHorizontal_bias="0.338"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -48,12 +46,12 @@
         android:id="@+id/editTextNumberDecimal4"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="a front"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal6"
         app:layout_constraintEnd_toStartOf="@+id/textView13"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal3"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
 
     <EditText
@@ -64,8 +62,9 @@
         android:ems="10"
         android:hint="w rear"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal6"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal6"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal3" />
 
     <EditText
@@ -73,11 +72,13 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="a rear"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal4" />
 
     <EditText
@@ -85,11 +86,13 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="a fuel"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toStartOf="@+id/textView26"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal7"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
@@ -97,61 +100,81 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="w fuel"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal8"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal8"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimal8" />
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
         android:text="m ramp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal8"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/ramp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
         android:text="Ramp Weight"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal9"
         app:layout_constraintEnd_toStartOf="@+id/textView17"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal8"
         app:layout_constraintVertical_bias="0.507" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="w ramp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintEnd_toStartOf="@+id/textView18"
-        app:layout_constraintStart_toEndOf="@+id/ramp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal7"
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a ramp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView19"
         app:layout_constraintEnd_toStartOf="@+id/textView19"
-        app:layout_constraintStart_toEndOf="@+id/textView17" />
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal8"
+        app:layout_constraintTop_toTopOf="@+id/textView19"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m landing"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:ignore="RtlCompat" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal11"
@@ -162,139 +185,191 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/textView30"
         app:layout_constraintEnd_toStartOf="@+id/textView30"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a landing"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView25"
         app:layout_constraintEnd_toStartOf="@+id/textView25"
-        app:layout_constraintStart_toEndOf="@+id/textView23" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal11"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="w landing"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView24"
         app:layout_constraintEnd_toStartOf="@+id/textView24"
-        app:layout_constraintStart_toEndOf="@+id/landing" />
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal11"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a takeoff"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         app:layout_constraintEnd_toStartOf="@+id/textView22"
-        app:layout_constraintStart_toEndOf="@+id/textView20" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal9"
+        app:layout_constraintTop_toTopOf="@+id/textView22"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="w takeoff"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintEnd_toStartOf="@+id/textView21"
-        app:layout_constraintStart_toEndOf="@+id/takeoff" />
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal9"
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m takeoff"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView21"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:ignore="RtlCompat" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal9"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="w taxi"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
         app:layout_constraintEnd_toStartOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="w zero"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintStart_toEndOf="@+id/zero" />
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal5"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a zero"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal5"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m zero"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal6"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/weight_balance"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="6dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m empty"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimal2"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="11dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m front"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal4"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimal4"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m rear"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal6"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal4"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/zero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Zero Fuel Weight"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
@@ -303,20 +378,21 @@
 
     <Button
         android:id="@+id/takeoff"
-        android:layout_width="146dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Take off Weight"
         app:layout_constraintEnd_toStartOf="@+id/textView20"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal9" />
 
     <Button
         android:id="@+id/landing"
-        android:layout_width="97dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="33dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Landing Weight"
         app:layout_constraintEnd_toStartOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="parent"
@@ -324,50 +400,71 @@
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m fuel"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal8" />
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m taxi"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
         android:text="m used"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView30"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a fuel"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView27"
         app:layout_constraintEnd_toStartOf="@+id/textView27"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal9" />
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView27"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="a fuel"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView28"
         app:layout_constraintEnd_toStartOf="@+id/textView28"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal11" />
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/textView28"
+        tools:ignore="RtlCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
